@@ -3,16 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
     <title>Audio & Video Tags</title>
 </head>
-<body>
-    <video height="815" src="Beautiful Lines - Made with Clipchamp.mp4" controls></video>
-    <audio src="Tere Liye Prince 320 Kbps.mp3" controls></audio>
-    <br/>
-    <svg height="100" width="100">
-        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
-    </svg>
-    <br/>
-    <img src="img.svg" alt="This is SVG image!"/>
+<body background="Birds.jpg">
+    <div class="btnCon">
+        <button class="btn">Video</button>
+        <button class="btn">Audio</button>
+        <button class="btn">SVG</button>
+        <button class="btn">SVG Image</button>
+    </div>
+    <div id="videoContainer" class="commonContainer">
+        <video src="Beautiful Lines - Made with Clipchamp.mp4" controls></video>
+    </div>
+    <div id="audioContainer" class="commonContainer">
+        <audio src="Tere Liye Prince 320 Kbps.mp3" controls></audio>
+    </div>
+    <div id="svgContainer" class="commonContainer">
+        <svg height="200" width="200">
+            <circle cx="100" cy="100" r="80" stroke="black" stroke-width="3" fill="yellow" />
+        </svg>
+    </div>
+    <div id="imgContainer" class="commonContainer">
+        <img src="img.svg" alt="This is SVG image!"/>
+    </div>
+
+    <script>
+        const buttons = document.querySelectorAll(".btn");
+        const containers = {
+            "Video": document.getElementById("videoContainer"),
+            "Audio": document.getElementById("audioContainer"),
+            "SVG": document.getElementById("svgContainer"),
+            "SVG Image": document.getElementById("imgContainer"),
+        };
+    
+        buttons.forEach(button => {
+            button.addEventListener("click", () => {
+                Object.values(containers).forEach(c => c.style.display = "none"); // Hide all
+                containers[button.textContent].style.display = "flex"; // Show selected
+            });
+        });
+    </script>
+    
 </body>
 </html>

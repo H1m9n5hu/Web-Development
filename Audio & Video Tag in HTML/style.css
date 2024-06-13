@@ -1,0 +1,63 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden; /* Prevent scrolling */
+    font-family: Arial, sans-serif;
+}
+
+/* Container for whole layout */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Keep buttons at top */
+    padding-top: 30px;
+}
+
+/* Button container */
+.btnCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+/* Button styling */
+.btn {
+    border-radius: 30px;
+    color: black;
+    font-weight: bold;
+    width: 200px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 2px solid black;
+}
+
+/* Shared style for media containers */
+.commonContainer {
+    display: none; /* hidden by default, toggle via JS */
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 100%;
+}
+
+/* To make video/audio/image fit nicely */
+video, audio, svg, img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+video {
+    border-radius: 30px;
+}
