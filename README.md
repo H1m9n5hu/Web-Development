@@ -1,6 +1,9 @@
-# My Frontend Projects
+# My Frontend Projects 🚀
 
-| Project Name                 | Live Link                                   |
-|-----------------------------|----------------------------------------------|
-| Audio, Video & SVG Demo     | [View](https://your-first-project.netlify.app) |
-| Embedded YouTube & Website  | [View](https://your-second-project.netlify.app) |
+Here are a few simple HTML/CSS projects I built and deployed on Netlify:
+
+## 1. Audio, Video & SVG Demo
+🔗 [Live Project](https://your-first-project.netlify.app)
+
+## 2. Embedded YouTube & Website
+🔗 [Live Project](https://your-second-project.netlify.app)
